@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Messages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="master" data-role="page" class="page-messages">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left"></div>
+            <div class="ui-block-b page-title">Messages</div>
+            <div class="ui-block-c icon-right"><a href="search.html" class="clearfix"><img src="img/icons/search.png"></a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+		<a href="chat-session.html" data-transition="slidefade" class="messagesBox messagesNew clearfix">
+        	<div class="messagesLeftWrapper">
+            	<div class="messagesLeft"><img src="img/profile-pic/profile-pic1.png" class="messagesProfilePic"></div>
+            </div>
+            <div class="messagesContent">
+            	<p class="messagesName">Rihanna Smith</p>
+                <p class="messagesTime">16:21pm</p>
+                <p class="messagesCopy">Lorem ipsum dolor sit amet, consectetur adipielt. Nulla nec tortor a scelerisque...</p>
+            </div>
+        </a><!-- /messages -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <a href="chat-session.html" data-transition="slidefade" class="messagesBox clearfix">
+        	<div class="messagesLeftWrapper">
+            	<div class="messagesLeft"><img src="img/profile-pic/profile-pic1.png" class="messagesProfilePic"></div>
+            </div>
+            <div class="messagesContent">
+            	<p class="messagesName">Rihanna Smith</p>
+                <p class="messagesTime">24/06/2014</p>
+                <p class="messagesCopy">Lorem ipsum dolor sit amet, consectetur adipielt. Nulla nec tortor a scelerisque vulpius...</p>
+            </div>
+        </a><!-- /messages -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-direction="reverse" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

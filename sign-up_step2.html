@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up - Step 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body class="page-signup-step2">
+
+<div id="master" data-role="page" class="page-signup-step2">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left back-btn"><a href="#" data-rel="back" class="clearfix">Back</a></div>
+            <div class="ui-block-b page-title">Subscribe</div>
+            <div class="ui-block-c icon-right"></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<div class="stepsWrapper clearfix">
+        	<div class="stepOne steps">
+        		<div class="stepCircles"><span>1</span></div>
+                <p class="stepDesc">Details</p>
+            </div>
+            <div class="stepsDivider"></div>
+            <div class="stepTwo steps">
+        		<div class="stepCircles"><span>2</span></div>
+                <p class="stepDesc">Subscribe</p>
+            </div>
+            <div class="stepsDivider"></div>
+            <div class="stepThree steps stepInactive">
+        		<div class="stepCircles"><span>3</span></div>
+                <p class="stepDesc">Verify</p>
+            </div>
+        </div>
+        
+    <form name="subscribeForm" class="subscribeForm" id="subscribeForm" action="sign-up_step3.html">
+        <a href="#" class="optionSelect-btn optionActive-btn">
+        	<p>1</p>
+        	months subscription
+            <span><br>$25,000.00 per month</span>
+        </a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn">
+        	<p>3</p>
+            months subscription
+            <span><br>$20,000.00 per month</span><br>
+		</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn">
+        	<p>6</p>
+            months subscription
+            <span><br>$17,500.00 per month</span>
+        </a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn">
+        	<p>12</p>
+            months subscription
+            <span><br>$15,000.00 per month</span>
+        </a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+    	<div class="renewalSwitchWrapper clearfix">
+        	<p class="renewalSwitchTitle">Auto-renewal</p>
+                <fieldset class="renewalSwitchForm">
+    				<label for="renewalSwitch" class="ui-hidden-accessible">Auto-renewal</label>
+                    <select name="renewalSwitch" id="renewalSwitch" data-role="flipswitch">
+                        <option value="off"></option>
+                        <option value="on"></option>
+                    </select>
+				</fieldset>
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <div class="saveBtn"><input type="submit" value="Register" id="subscribeBtn"></div>
+    </form>
+    <p class="signupTerms">By tapping “Register” above, you are agreeing<br>
+        to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a><br>
+        including the <a href="#">Cookie Use</a>
+	</p>
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

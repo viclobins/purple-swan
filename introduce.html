@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Introduce</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body class="page-introduce">
+
+<!-- page-introduce -->
+<div id="page-introduce" data-role="page" class="page-introduce">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left cancel-btn"><a href="#" data-rel="back" class="clearfix">Cancel</a></div>
+            <div class="ui-block-b page-title">Introduce</div>
+            <div class="ui-block-c icon-right"><a href="search.html" class="clearfix"><img src="img/icons/search.png"></a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+		<div class="introCopyWrapper">
+        	<p class="introCopy">Introduce a mutal favourite<br>
+        	to <span class="introNameTo">Bradley Cooper</span></p>
+        </div>
+        
+        <div class="profilePicsBox">
+        	<div class="profileLeft"><img src="img/profile-pic/profile-pic1.png" class="profilePicLeft"></div>
+            <div class="greyDivider"></div>
+            <div class="profilePlaceholder"><a href="#page-selectFav"><img src="img/profile-pic/profile-pic-placeholder.png" class="profilePlaceholderImg"></a></div>
+            <div class="greyDivider"></div>
+            <div class="profileRight"><img src="img/profile-pic/profile-pic2.png" class="profilePicRight"></div>
+        </div>
+        
+        <p class="introCopyGrey">Tap the space above to select a mutual favourite</p>
+	</div><!-- /content -->
+    
+    <a href="#" class="ui-btn ui-corner-all ui-state-disabled introduceBtn">Introduce</a>
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-introduce -->
+
+
+<!-- page-selectFav -->
+<div id="page-selectFav" data-role="page" class="page-selectFav">
+
+    <div id="header" data-role="header">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left cancel-btn"><a href="introduce.html" class="clearfix">Cancel</a></div>
+            <div class="ui-block-b page-title">Select a Favourite</div>
+            <div class="ui-block-c icon-right"><a href="search.html" class="clearfix"><img src="img/icons/search.png"></a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<form class="searchFavourites">
+            <input data-type="search" id="filterControlgroup-input" placeholder="Search">
+        </form>
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+		<a href="#page-introduced" class="favBox introLink clearfix" data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input">
+        	<div class="favLeft">
+            	<img src="img/profile-pic/profile-pic1.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+            	<p class="favTextbox">
+                	<span class="favName">Rihanna Smith</span>
+                    <br>
+                    <span class="favUsername">*rihanna</span>
+              	</p>
+            </div>
+            <div class="favLinks">
+            	<div class="favButtonActive"><img src="img/icons/favourites-purple.png"></div>
+            </div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /fav -->
+        
+        <a href="#page-introduced" class="favBox introLink clearfix" data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input">
+        	<div class="favLeft">
+            	<img src="img/profile-pic/profile-pic2.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+            	<p class="favTextbox">
+                	<span class="favName">Bradley Cooper</span>
+                    <br>
+                    <span class="favUsername">*b_cooper</span>
+              	</p>
+            </div>
+            <div class="favLinks">
+            	<div class="favButtonActive"><img src="img/icons/favourites-purple.png"></div>
+            </div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /fav -->
+        
+        <a href="#page-introduced" class="favBox introLink clearfix" data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input">
+        	<div class="favLeft">
+            	<img src="img/profile-pic/profile-pic3.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+            	<p class="favTextbox">
+                	<span class="favName">Jay Z</span>
+                    <br>
+                    <span class="favUsername">*jay_z</span>
+              	</p>
+            </div>
+            <div class="favLinks">
+            	<div class="favButtonActive"><img src="img/icons/favourites-purple.png"></div>
+            </div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /fav -->
+        
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-selectFav -->
+
+
+<!-- page-introduced -->
+<div id="page-introduced" data-role="page" class="page-introduced">
+
+    <div id="header" data-role="header">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left cancel-btn"><a href="introduce.html" class="clearfix">Cancel</a></div>
+            <div class="ui-block-b page-title">Introduce</div>
+            <div class="ui-block-c icon-right"><a href="search.html" class="clearfix"><img src="img/icons/search.png"></a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+		<div class="introCopyWrapper">
+            <p class="introCopy">Introduce a mutal favourite<br>
+            to <span class="introNameTo">Bradley Cooper</span></p>
+            
+            <p class="introCopyGold">Congratulations! you have successfully<br>
+            introduced <span class="introNameWho">Jay Z</span> to <span class="introNameTo">Bradley Cooper</span></p>
+        </div>
+        
+        <div class="profilePicsBox">
+        	<div class="profileLeft"><img src="img/profile-pic/profile-pic1.png" class="profilePicLeft"></div>
+            <div class="greyDivider"></div>
+            <div class="profilePlaceholder"><img src="img/profile-pic/profile-pic3.png" class="profilePlaceholderImg greyBorder"></div>
+            <div class="greyDivider"></div>
+            <div class="profileRight"><img src="img/profile-pic/profile-pic2.png" class="profilePicRight"></div>
+        </div>
+	</div><!-- /content -->
+    
+    <a href="#" class="ui-btn ui-corner-all introduceBtn">Introduce</a>
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-introduced -->
+
+</body>
+</html>

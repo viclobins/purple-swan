@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Photos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="page-singlephoto" data-role="page" class="page-singlephoto">
+<script>
+$(document).bind('swipeupdown', function () {
+    history.back();
+});
+</script>
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<div class="galleryWrapper" id="galleryWrapper">
+        	<img src="img/profile-pic/photo1.jpg" class="galleryItem">
+        </div>
+        <div class="sharePhotoButtons clearfix">
+        	<a href="#" class="spReply spReplyActive"><span class="counter">3</span></a>
+            <a href="#" class="spShare"><span class="counter">7</span></a>
+            <a href="#" class="spLike"><span class="counter">3</span></a>
+            <a href="#" class="spMore"></a>
+        </div>
+	</div><!-- /content -->
+
+</div><!-- /page-singlephoto -->
+
+</body>
+</html>

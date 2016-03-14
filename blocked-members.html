@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blocked Members</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="page-blockedmembersList" data-role="page" class="page-blockedmembersList">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left back-btn"><a href="edit-profile.html" rel="external" class="clearfix">Back</a></div>
+            <div class="ui-block-b page-title">Edit Profile</div>
+            <div class="ui-block-c icon-right cancel-btn"><a href="#page-blockedmembersEdit" rel="external" class="clearfix">Edit</a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<p class="pageTitleFull">All blocked members</p>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+		<div class="favBox blockedMembersList clearfix">
+        	<div class="favLeft">
+            	<a href="#"><img src="img/profile-pic/profile-pic1.png" class="favProfilePic"></a>
+            </div>
+            <div class="favContent">
+            	<a href="#" class="favTextbox">
+                	<span class="favName">Rihanna Smith</span>
+                    <br>
+                    <span class="favUsername">*rihanna</span>
+              	</a>
+            </div>
+            <a href="#" class="unblockMemberBtn">Unblock member</a>
+        </div><!-- /blocked members -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="favBox blockedMembersList clearfix">
+        	<div class="favLeft">
+            	<a href="#"><img src="img/profile-pic/profile-pic2.png" class="favProfilePic"></a>
+            </div>
+            <div class="favContent">
+            	<a href="#" class="favTextbox">
+                	<span class="favName">Bradley Cooper</span>
+                    <br>
+                    <span class="favUsername">*b_cooper</span>
+              	</a>
+            </div>
+            <a href="#" class="unblockMemberBtn">Unblock member</a>
+        </div><!-- /blocked members -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="favBox blockedMembersList clearfix">
+        	<div class="favLeft">
+            	<a href="#"><img src="img/profile-pic/profile-pic3.png" class="favProfilePic"></a>
+            </div>
+            <div class="favContent">
+            	<a href="#" class="favTextbox">
+                	<span class="favName">Jay Z</span>
+                    <br>
+                    <span class="favUsername">*jay_z</span>
+              	</a>
+            </div>
+            <a href="#" class="unblockMemberBtn">Unblock member</a>
+        </div><!-- /blocked members -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-blockedmembersList -->
+
+
+<div id="page-blockedmembersEdit" data-role="page" class="page-blockedmembersEdit">
+<script  type="text/javascript">
+$( '#page-blockedmembersEdit' ).on( 'pageinit',function(event){
+  $('.blockedMemberLink').click(function(event){
+		$(this).find('.tickBtn').toggleClass('tickBtnActive');
+		return false;
+	});
+});
+</script>
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left back-btn"><a href="#" data-rel="back" class="clearfix">Back</a></div>
+            <div class="ui-block-b page-title">Edit Profile</div>
+            <div class="ui-block-c icon-right cancel-btn"><a href="#" class="clearfix">Select</a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<p class="pageTitleFull">All blocked members</p>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <a href="#" class="favBox introLink blockedMemberLink clearfix">
+        	<div class="favLeft">
+            	<img src="img/profile-pic/profile-pic1.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+            	<p class="favTextbox">
+                	<span class="favName">Rihanna Smith</span>
+                    <br>
+                    <span class="favUsername">*rihanna</span>
+              	</p>
+            </div>
+            <div class="tickBtn"></div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /fav -->
+        
+		<a href="#" class="favBox introLink blockedMemberLink clearfix">
+        	<div class="favLeft">
+            	<img src="img/profile-pic/profile-pic2.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+            	<p class="favTextbox">
+                	<span class="favName">Bradley Cooper</span>
+                    <br>
+                    <span class="favUsername">*b_cooper</span>
+              	</p>
+            </div>
+            <div class="tickBtn"></div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /fav -->
+        
+        <a href="#" class="favBox introLink blockedMemberLink clearfix">
+        	<div class="favLeft">
+            	<img src="img/profile-pic/profile-pic3.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+            	<p class="favTextbox">
+                	<span class="favName">Jay Z</span>
+                    <br>
+                    <span class="favUsername">*jay_z</span>
+              	</p>
+            </div>
+            <div class="tickBtn"></div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /fav -->
+        
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-blockedmembersEdit -->
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Followers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="master" data-role="page" class="page-followers">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left back-btn"><a href="#" data-rel="back" class="clearfix">Back</a></div>
+            <div class="ui-block-b page-title">Followers</div>
+            <div class="ui-block-c icon-right"><a href="search.html" class="clearfix"><img src="img/icons/search.png"></a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+		<div class="favBox clearfix">
+        	<div class="favLeft">
+            	<a href="#"><img src="img/profile-pic/profile-pic1.png" class="favProfilePic"></a>
+            </div>
+            <div class="favContent">
+            	<a href="#" class="favTextbox">
+                	<span class="favName">Rihanna Smith</span>
+                    <br>
+                    <span class="favUsername">*rihanna</span>
+              	</a>
+            </div>
+            <div class="favLinks">
+            	<a href="#" class="favButtonActive"><img src="img/icons/favourites-purple.png"></a>
+                <a href="chat-session.html" class="favMessage"><img src="img/icons/message-grey.png"></a>
+                <a href="introduce.html" rel="external" class="favIntroduce"><img src="img/icons/introduce-grey.png"></a>
+            </div>
+        </div><!-- /fav -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="favBox clearfix">
+        	<div class="favLeft">
+            	<a href="#"><img src="img/profile-pic/profile-pic2.png" class="favProfilePic"></a>
+            </div>
+            <div class="favContent">
+            	<a href="#" class="favTextbox">
+                	<span class="favName">Bradley Cooper</span>
+                    <br>
+                    <span class="favUsername">*b_cooper</span>
+              	</a>
+            </div>
+            <div class="favLinks">
+            	<a href="#" class="favButton"><img src="img/icons/favourites-purple.png"></a>
+                <a href="chat-session.html" class="favMessage"><img src="img/icons/message-grey.png"></a>
+            </div>
+        </div><!-- /fav -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

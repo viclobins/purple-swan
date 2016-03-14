@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Single Post</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="master" data-role="page" class="page-singlepost">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left back-btn"><a href="#" data-rel="back" class="clearfix">Back</a></div>
+            <div class="ui-block-b page-title">Post</div>
+            <div class="ui-block-c icon-right"><a href="search.html" class="clearfix"><img src="img/icons/search.png"></a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<div class="ui-grid-a postsWrapper user_b_cooper">
+            <div class="ui-block-a postsLeft"><img class="postsProfilePic" src="img/profile-pic/profile-pic2.png"></div>
+            <div class="ui-block-b postsRight">
+            	<h1 class="postsName">Bradley Cooper<span>&nbsp;</span><span class="profileUsername">*b_cooper</span></h1>
+                <p class="postsCopy">Like a glow stick, sometimes we have to break before we shine. <a href="http://bit.ly/1gYiV90" target="_blank" class="postsLink">http://bit.ly/1gYiV90</a></p>
+                <p class="postsInfo">
+                	<span class="date">09/04/2014</span>
+                    <span> at </span>
+                    <span class="time">14:15pm</span>
+                    <span class="from"><span> from </span>London, England</span>
+                </p>
+                <div class="ui-grid-c postsIcons">
+                    <div class="ui-block-a"><a href="#" class="postsReply postsReplyActive"><span class="counter">3</span></a></div>
+                    <div class="ui-block-b"><a href="#" class="postsShare postsShareActive"><span class="counter">2</span></a></div>
+                    <div class="ui-block-c"><a href="#" class="postsLike postsLikeActive"><span class="counter">9</span></a></div>
+                    <div class="ui-block-d"><a href="#" class="postsDelete"></a></div>
+                </div><!-- /postsIcons -->
+            </div><!-- /block-b -->
+            
+            <div class="shareWrapper">
+                <div class="clearfix">
+                	<a href="#" class="shareLinks psShare">My wall</a>
+                    <a href="#" class="shareLinks fbShare">Facebook</a>
+                    <a href="#" class="shareLinks twitterShare">Twitter</a>
+                </div>
+                <a href="#" class="shareConfirm ui-state-disabled"><span>Share</span></a>
+                <a href="#" class="shareCloseBtn"></a>
+            </div>
+        </div><!-- /postsWrapper -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="ui-grid-a postsWrapper user_rihanna">
+            <div class="ui-block-a postsLeft"><img class="postsProfilePic" src="img/profile-pic/profile-pic1.png"></div>
+            <div class="ui-block-b postsRight">
+            	<h1 class="postsName">Rihanna Smith<span>&nbsp;</span><span class="profileUsername">*rihanna</span></h1>
+                <p class="postsCopy">Facebook got 2 billion to burn even though the site is 90% candy crush requests & fake news that tricked your grandma.</p>
+                <p class="postsInfo">
+                	<span class="date">09/04/2014</span>
+                    <span> at </span>
+                    <span class="time">14:15pm</span>
+                </p>
+                <div class="ui-grid-c postsIcons">
+                    <div class="ui-block-a"><a href="#" class="postsReply"></a></div>
+                    <div class="ui-block-b"><a href="#" class="postsShare"><span class="counter">2</span></a></div>
+                    <div class="ui-block-c"><a href="#" class="postsLike"><span class="counter">1</span></a></div>
+                    <div class="ui-block-d"><a href="#" class="postsMore"></a></div>
+                </div><!-- /postsIcons -->
+            </div><!-- /block-b -->
+            
+            <div class="shareWrapper">
+                <div class="clearfix">
+                	<a href="#" class="shareLinks psShare">My wall</a>
+                    <a href="#" class="shareLinks fbShare">Facebook</a>
+                    <a href="#" class="shareLinks twitterShare">Twitter</a>
+                </div>
+                <a href="#" class="shareConfirm ui-state-disabled"><span>Share</span></a>
+                <a href="#" class="shareCloseBtn"></a>
+            </div>
+        </div><!-- /postsWrapper -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+    
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+    	<div class="horizontal-divider"></div><!-- /divider -->
+        
+    	<form name="replyForm" class="replyForm" id="replyForm">
+            <label for="replyToPost" class="ui-hidden-accessible">Textarea:</label>
+            <textarea name="replyToPost" id="replyToPost" class="replyToPost" placeholder="Reply to post..." rows="1"></textarea>
+            <input type="submit" data-role="none" value="Send" class="sendReply" id="sendReply">
+        </form>
+        <div class="ui-grid-b replyButtons clearfix">
+            <div class="ui-block-a"><a href="#" class="takePhotoBtn"><img src="img/icons/camera-grey.png"></a></div>
+            <div class="ui-block-b"><a href="#" class="choosePhotoBtn"><img src="img/icons/photo-grey.png"></a></div>
+            <div class="ui-block-c"><a href="#" class="locationBtn locationBtnActive"></a></div>
+        </div>
+        
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Write Post</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="master" data-role="page" class="page-writepost">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left back-btn"><a href="#" data-rel="back" class="clearfix">Back</a></div>
+            <div class="ui-block-b page-title"></div>
+            <div class="ui-block-c icon-right cancel-btn post-btn"><a href="#" class="clearfix">Post</a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<div class="ui-grid-a postContent user_rihanna">
+            <div class="ui-block-a postsLeft"><img class="postsProfilePic" src="img/profile-pic/profile-pic1.png"></div>
+            <div class="ui-block-b postsRight">
+            	<h1 class="postsName">Rihanna Smith<span><br></span><span class="profileUsername">*rihanna</span></h1>
+            </div><!-- /block-b -->
+            
+            <form>
+            	<div class="postTextareaWrapper clearfix">
+                	<textarea name="postTextarea" id="postTextarea" class="postTextarea" maxlength="1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit *bradley_</textarea>
+                </div>
+                
+                <div class="postPhotoWrapper clearfix">
+                    <div class="postPhoto">
+                    	<a href="#" class="closeBtn"><img src="img/icons/purple-x.png"></a>
+                    	<img src="img/profile-pic/posts-photo1.jpg" class="postPhotoImg">
+                    </div>
+                    <div class="postPhoto">
+                    	<a href="#" class="closeBtn"><img src="img/icons/purple-x.png"></a>
+                    	<img src="img/profile-pic/profile-photo2.png" class="postPhotoImg">
+                    </div>
+                </div>
+                
+                <p class="fromCopy">From <span class="location">London, England</span></p>
+            </form>
+        </div><!-- /postContent -->
+        
+        <a href="#" class="favBox introLink includeUser clearfix">
+            <div class="favLeft">
+                <img src="img/profile-pic/profile-pic1.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+                <p class="favTextbox">
+                    <span class="favName">Rihanna Smith</span>
+                    <br>
+                    <span class="favUsername">*rihanna</span>
+                </p>
+            </div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /includeUser -->
+        
+        <a href="#" class="favBox introLink includeUser clearfix">
+            <div class="favLeft">
+                <img src="img/profile-pic/profile-pic2.png" class="favProfilePic">
+            </div>
+            <div class="favContent">
+                <p class="favTextbox">
+                    <span class="favName">Bradley Cooper</span>
+                    <br>
+                    <span class="favUsername">*b_cooper</span>
+                </p>
+            </div>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+        </a><!-- /includeUser -->
+    
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+    	<div class="horizontal-divider"></div><!-- /divider -->
+        <div class="ui-grid-b replyButtons replyButtonsFull clearfix">
+            <div class="ui-block-a"><a href="#" class="takePhotoBtn"><img src="img/icons/camera-grey.png"></a></div>
+            <div class="ui-block-b"><a href="#" class="choosePhotoBtn"><img src="img/icons/photo-grey.png"></a></div>
+            <div class="ui-block-c"><a href="#" class="locationBtn locationBtnActive"></a></div>
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

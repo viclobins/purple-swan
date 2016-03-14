@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Edit Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="page-editprofile" data-role="page" class="page-editprofile">
+<script  type="text/javascript">
+$( '#page-editprofile' ).on( 'pageinit',function(event){	
+	var text_max = 300;
+	var text_length = $('#aboutTextarea').val().length;
+	var text_remaining = text_max - text_length;
+    $('.charCount').html(text_remaining);
+
+    $('#aboutTextarea').keyup(function() {
+        var text_length = $('#aboutTextarea').val().length;
+        var text_remaining = text_max - text_length;
+
+        $('.charCount').html(text_remaining);
+    });
+});
+</script>
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left back-btn"><a href="#" data-rel="back" class="clearfix">Back</a></div>
+            <div class="ui-block-b page-title">Edit Profile</div>
+            <div class="ui-block-c icon-right"></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    <div class="goldNotice">
+        <a href="#" class="noticeClose"><img src="img/icons/cross-white.png"></a>
+        <p><strong>Your account has been successfully upgraded!</strong><br>
+        The upgraded 12 months subscription will start on<br>
+        00/00/0000 after your current subscription has expired.</p>
+    </div>
+    <form>
+    	<div class="editName-btn clearfix">
+            <label for="name">Name:</label>
+     		<input type="text" name="name" id="name" value="Rihanna Smith">
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="editProfile-btn">Profile Photo<span class="editProfileImg"><img src="img/profile-pic/profile-pic1.png"></span></a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="editProfile-btn">Background Banner<span class="editBackgroundImg"><img src="img/profile-bg/background1.jpg"></span></a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <div class="aboutProfileWrapper clearfix">
+        	<p class="aboutProfileTitle">About<span class="charCount"></span></p>
+            <textarea name="aboutTextarea" id="aboutTextarea" class="aboutTextarea" maxlength="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit placerat purus, non fermentum neque adipiscing sed. Pellentesque habitant morbi.</textarea>
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <div class="myWallSwitchWrapper clearfix">
+        	<p class="myWallSwitchTitle">My wall</p>
+                <fieldset class="myWallSwitchForm">
+    				<label for="myWallSwitch" class="ui-hidden-accessible">My wall</label>
+                    <select name="myWallSwitch" id="myWallSwitch" data-role="flipswitch">
+                        <option value="off"></option>
+                        <option value="on"></option>
+                    </select>
+				</fieldset>
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <div class="myWallOptions" style="display:none;">
+        	<a href="#page-myWallOptionOne" class="editProfile-btn-wArrow myWallOptionOne">Who can view my wall<p class="myWallOptionOneCurrent">All members</p></a>
+        	<div class="horizontal-divider"></div><!-- /divider -->
+            <a href="#page-myWallOptionTwo" class="editProfile-btn-wArrow myWallOptionTwo">Who can post/comment on my wall<p class="myWallOptionTwoCurrent">My favourite members only</p></a>
+        	<div class="horizontal-divider"></div><!-- /divider -->
+        </div>
+        <a href="blocked-members.html" rel="external" class="editProfile-btn-wArrow">View all blocked members</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="change-password.html" class="editProfile-btn-wArrow">Change password</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="account-settings.html" class="editProfile-btn-wArrow">Manage account settings</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+    </form>
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-editprofile -->
+
+
+<div id="page-myWallOptionOne" data-role="page" class="page-myWallOptionOne">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left"></div>
+            <div class="ui-block-b page-title">Edit Profile</div>
+            <div class="ui-block-c icon-right cancel-btn"><a href="#page-editprofile" class="clearfix">Done</a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<p class="pageTitleFull">Who can view my wall</p>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn optionActive-btn">All members</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn">My favourite members only</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn">Only me</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-myWallOptionOne -->
+
+
+<div id="page-myWallOptionTwo" data-role="page" class="page-myWallOptionTwo">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left"></div>
+            <div class="ui-block-b page-title">Edit Profile</div>
+            <div class="ui-block-c icon-right cancel-btn"><a href="#page-editprofile" class="clearfix">Done</a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<p class="pageTitleFull">Who can comment/post on my wall</p>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn optionActive-btn">All members</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn">My favourite members only</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="#" class="optionSelect-btn">Only me</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page-myWallOptionTwo -->
+
+</body>
+</html>

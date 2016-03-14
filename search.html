@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="master" data-role="page" class="page-search">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left"></div>
+            <div class="ui-block-b page-title">Search</div>
+            <div class="ui-block-c icon-right"></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+        <form class="searchFiltersForm" id="searchFiltersForm" name="searchFiltersForm" action="search-results.html">
+        
+        	<input type="search" name="searchInput" class="searchInput" id="searchInput" placeholder="Search">
+
+            <p class="filterCopy"><strong>Filter your search</strong><br>
+                Use the filter options below to find<br>
+                members in your selected location.
+            </p>
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+            <fieldset data-role="controlgroup" data-corners="false">
+                <label for="selectByStatus">Select by Status</label>
+                <select name="selectByStatus" id="selectByStatus">
+                    <option value="most-popular">Most Popular</option>
+                    <option value="recently-joined">Recently Joined</option>
+                    <option value="active-now">Active Now</option>
+                </select>
+            </fieldset>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+            
+            <fieldset data-role="controlgroup" data-corners="false">
+                <label for="selectByLocale">Select by Locale</label>
+                <select name="selectByLocale" id="selectByLocale">
+                    <option value="global">Global</option>
+                    <option value="country">Country</option>
+                    <option value="local">Local</option>
+                </select>
+            </fieldset>
+            
+            <div class="horizontal-divider"></div><!-- /divider -->
+            
+            <div class="ui-field-contain selectCountryWrapper" style="display:none;">
+                <label for="selectCountry" style="display:none;">Select country:</label>
+                <select name="selectCountry" id="selectCountry" data-native-menu="false" multiple="multiple" data-iconpos="right"  data-corners="false">
+                    <option>Select your country:</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States of America</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VS">Vatican City State</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Vietnam</option>
+                    <option value="VB">Virgin Islands (Brit)</option>
+                    <option value="VA">Virgin Islands (USA)</option>
+                    <option value="WK">Wake Island</option>
+                    <option value="WF">Wallis &amp; Futana Is</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZR">Zaire</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+                
+                <div class="horizontal-divider"></div><!-- /divider -->
+            </div>
+            
+            <div class="distanceSliderWrapper" style="display:none;">
+            	<label for="distanceSlider">Distance</label>
+    			<input type="range" name="distanceSlider" id="distanceSlider" data-highlight="true" min="0" max="300" value="100">
+                <div class="horizontal-divider"></div><!-- /divider -->
+            </div>
+            
+            <div class="filterBtn"><input type="submit" value="Filter search results" id="filterBtn"></div>
+		</form>
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

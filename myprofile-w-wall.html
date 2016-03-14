@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Profile - W Wall</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="master" data-role="page" class="page-me">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left"></div>
+            <div class="ui-block-b page-title">My Profile</div>
+            <div class="ui-block-c icon-right"><a href="search.html" class="clearfix"><img src="img/icons/search.png"></a></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div class="horizontal-divider"></div><!-- /divider -->
+    
+    <div id="mainContent" role="main" class="ui-content user_rihanna">
+		<div class="profileCover">
+        	<a href="photo-gallery.html" class="profilePic">
+            	<img src="img/profile-pic/profile-pic1.png">
+            </a>
+            <div class="profileBox">
+                <p class="profileName">Rihanna Smith<br>
+                    <span class="profileUsername">*rihanna</span>
+                </p>
+            </div>
+            <div class="profileStrip clearfix">
+            	<p><a class="whiteLink" href="favourites.html">Favourites 1,089</a></p>
+                <p><a class="whiteLink" href="followers.html">Followers 2,014</a></p>
+                <a href="edit-profile.html" rel="external" class="settings-btn"><img src="img/icons/settings.png"></a>
+            </div>
+        </div><!-- /profileCover -->	
+        
+        
+        <div class="ui-grid-a write-or-share">
+            <div class="ui-block-a"><a href="write-post.html" class="writePost">Write a post</a></div>
+            <div class="ui-block-b"><a href="#" class="sharePhoto">Share a photo</a></div>
+        </div><!-- /grid-a -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="photoWrapper">
+          <div class="photoScrolls">
+               <a href="#"><img src="img/profile-pic/profile-photo1.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo2.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo3.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo4.png"></a>
+               <div class="arrow-left"><img src="img/icons/arrow-left-grey.png"></div>
+               <a href="#"><img src="img/profile-pic/profile-photo1.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo2.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo3.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo4.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo1.png"></a>
+               <a href="#"><img src="img/profile-pic/profile-photo2.png"></a>
+          	</div>
+          </div>
+          <a href="photos.html" class="morePhotos">View more photos</a>
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="aboutSection">
+        	<h1 class="aboutHeading">About</h1>
+            <p class="aboutCopy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque suscipit placerat purus, non fermentum neque adipiscing sed. Pellentesque habitant morbi.</p>
+        </div><!-- /aboutSection -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="aboutHeading">Recent Posts</div>
+        
+        <div class="ui-grid-a postsWrapper">
+            <div class="ui-block-a postsLeft"><img class="postsProfilePic" src="img/profile-pic/profile-pic1.png"></div>
+            <div class="ui-block-b postsRight">
+            	<h1 class="postsName">Rihanna Smith<span>&nbsp;</span><span class="profileUsername">*rihanna</span></h1>
+                <p class="postsCopy">
+                	<a href="single-post.html" class="singlePostLink" data-transition="slide">Like a glow stick, sometimes we have to break before we shine.</a> <a href="http://bit.ly/1gYiV90" target="_blank" class="postsLink">http://bit.ly/1gYiV90</a>
+                </p>
+                <p class="postsInfo">
+                	<span class="date">11/04/2014</span>
+                    <span> at </span>
+                    <span class="time">02:21am</span>
+                    <span class="from"><span> from </span>London, England</span>
+                </p>
+                <div class="ui-grid-c postsIcons">
+                    <div class="ui-block-a"><a href="#" class="postsReply postsReplyActive"><span class="counter">3</span></a></div>
+                    <div class="ui-block-b"><a href="#" class="postsShare postsShareActive"><span class="counter">2</span></a></div>
+                    <div class="ui-block-c"><a href="#" class="postsLike postsLikeActive"><span class="counter">9</span></a></div>
+                    <div class="ui-block-d"><a href="#" class="postsDelete"></a></div>
+                </div><!-- /postsIcons -->
+            </div><!-- /block-b -->
+            
+            <div class="shareWrapper">
+                <div class="clearfix">
+                	<a href="#" class="shareLinks psShare">My wall</a>
+                    <a href="#" class="shareLinks fbShare">Facebook</a>
+                    <a href="#" class="shareLinks twitterShare">Twitter</a>
+                </div>
+                <a href="#" class="shareConfirm ui-state-disabled"><span>Share</span></a>
+                <a href="#" class="shareCloseBtn"></a>
+            </div>
+        </div><!-- /postsWrapper -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="ui-grid-a postsWrapper">
+            <div class="ui-block-a postsLeft"><img class="postsProfilePic" src="img/profile-pic/profile-pic1.png"></div>
+            <div class="ui-block-b postsRight">
+            	<h1 class="postsName">Rihanna Smith<span>&nbsp;</span><span class="profileUsername">*rihanna</span></h1>
+                <p class="postsCopy">
+                	<a href="single-post.html" class="singlePostLink" data-transition="slide">Facebook got 2 billion to burn even though the site is 90% candy crush requests & fake news that tricked your grandma.</a>
+                </p>
+                <p class="postsInfo">
+                	<span class="date">10/04/2014</span>
+                    <span> at </span>
+                    <span class="time">13:21pm</span>
+                </p>
+                <div class="ui-grid-c postsIcons">
+                    <div class="ui-block-a"><a href="#" class="postsReply"></a></div>
+                    <div class="ui-block-b"><a href="#" class="postsShare"></a></div>
+                    <div class="ui-block-c"><a href="#" class="postsLike"></a></div>
+                    <div class="ui-block-d"><a href="#" class="postsDelete"></a></div>
+                </div><!-- /postsIcons -->
+            </div><!-- /block-b -->
+            
+            <div class="shareWrapper">
+                <div class="clearfix">
+                	<a href="#" class="shareLinks psShare">My wall</a>
+                    <a href="#" class="shareLinks fbShare">Facebook</a>
+                    <a href="#" class="shareLinks twitterShare">Twitter</a>
+                </div>
+                <a href="#" class="shareConfirm ui-state-disabled"><span>Share</span></a>
+                <a href="#" class="shareCloseBtn"></a>
+            </div>
+        </div><!-- /postsWrapper -->
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="ui-grid-a postsWrapper">
+            <div class="ui-block-a postsLeft"><img class="postsProfilePic" src="img/profile-pic/profile-pic1.png"></div>
+            <div class="ui-block-b postsRight">
+            	<h1 class="postsName">Rihanna Smith<span>&nbsp;</span><span class="profileUsername">*rihanna</span></h1>
+                <a href="#" class="postsPhoto"><img src="img/profile-pic/posts-photo1.jpg" class="postsPhotoImg"></a>
+                <p class="postsCopy">
+                	<a href="single-post.html" class="singlePostLink" data-transition="slide">Why isn't everyone talking about Breaking Bad in Back to the Future 2?</a>
+                </p>
+                <p class="postsInfo">
+                	<span class="date">09/04/2014</span>
+                    <span> at </span>
+                    <span class="time">09:21am</span>
+                </p>
+                <div class="ui-grid-c postsIcons">
+                    <div class="ui-block-a"><a href="#" class="postsReply"></a></div>
+                    <div class="ui-block-b"><a href="#" class="postsShare"></a></div>
+                    <div class="ui-block-c"><a href="#" class="postsLike"></a></div>
+                    <div class="ui-block-d"><a href="#" class="postsDelete"></a></div>
+                </div><!-- /postsIcons -->
+            </div><!-- /block-b -->
+            
+            <div class="shareWrapper">
+                <div class="clearfix">
+                	<a href="#" class="shareLinks psShare">My wall</a>
+                    <a href="#" class="shareLinks fbShare">Facebook</a>
+                    <a href="#" class="shareLinks twitterShare">Twitter</a>
+                </div>
+                <a href="#" class="shareConfirm ui-state-disabled"><span>Share</span></a>
+                <a href="#" class="shareCloseBtn"></a>
+            </div>
+        </div><!-- /postsWrapper -->
+        
+        <a href="posts.html" class="morePosts" data-transition="slide">View more posts</a>
+        
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <a href="favourites.html" class="fullWidth-btn">Favourites</a>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <a href="followers.html" class="fullWidth-btn">Followers</a>
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-direction="reverse" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-direction="reverse" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

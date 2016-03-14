@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up - Step 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main-style.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.mobile-1.4.2.min.css" rel="stylesheet">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/custom-scripts.js"></script>
+</head>
+
+<body>
+
+<div id="master" data-role="page" class="page-signup-step1">
+
+    <div id="header" data-role="header" data-position="fixed">
+    	
+        <div class="ui-grid-b top-nav">
+            <div class="ui-block-a icon-left cancel-btn"><a href="login.html" rel="external" class="clearfix">Cancel</a></div>
+            <div class="ui-block-b page-title">Sign Up</div>
+            <div class="ui-block-c icon-right"></div>
+        </div><!-- /grid-b -->
+        
+    </div><!-- /header -->
+    
+    <div id="mainContent" role="main" class="ui-content">
+    	<div class="stepsWrapper clearfix">
+        	<div class="stepOne steps">
+        		<div class="stepCircles"><span>1</span></div>
+                <p class="stepDesc">Details</p>
+            </div>
+            <div class="stepsDivider"></div>
+            <div class="stepTwo steps stepInactive">
+        		<div class="stepCircles"><span>2</span></div>
+                <p class="stepDesc">Subscribe</p>
+            </div>
+            <div class="stepsDivider"></div>
+            <div class="stepThree steps stepInactive">
+        		<div class="stepCircles"><span>3</span></div>
+                <p class="stepDesc">Verify</p>
+            </div>
+        </div>
+        
+        <form name="signupForm" id="signupForm" action="sign-up_step2.html">
+        <div class="signup-btn clearfix">
+            <label for="full-name">Full Name</label>
+     		<input type="text" data-role="none" data-clear-btn="false" name="full-name" id="full-name" value="Salim Rupawala">
+            <img src="img/icons/tick-gold.png" class="entryCorrect">
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        
+        <div class="signup-btn entryInputIncorrect clearfix">
+        	<label for="email">Email</label>
+    		<input type="email" data-role="none" data-clear-btn="false" name="email" id="email" value="salim@rupawala.com">
+            <img src="img/icons/cross-red.png" class="entryIncorrect">
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <p class="incorrectMessage emailIncorrect">Please enter a valid email address</p>
+        
+        <div class="signup-btn clearfix">
+        	<label for="mobile-no">Mobile #</label>
+            <div class="countryCodeWrapper">
+            	<a href="#" class="countryCodeSelect">GB</a>
+                <span class="countryCode">+44</span>
+            </div>
+    		<input type="tel" data-role="none" data-clear-btn="false" name="mobile-no" id="mobile-no" value="" placeholder="Enter your mobile number">
+            <img src="img/icons/cross-red.png" class="entryIncorrect">
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <p class="incorrectMessage mobileIncorrect">Please enter a valid phone number</p>
+        
+        <div class="signup-btn clearfix">
+            <label for="username">Username</label>
+     		<input type="text" data-role="none" data-clear-btn="false" name="username" id="username" value="donaldtrump">
+            <img src="img/icons/tick-gold.png" class="entryCorrect">
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <p class="incorrectMessage mobileIncorrect">Your username must be 16 characters or less and only contain letters, numbers, underscores without any spaces.</p>
+        
+        <div class="signup-btn signup-pass-btn clearfix">
+            <label for="password">Password</label>
+     		<input type="password" data-clear-btn="false" name="password" id="password" value="asdqwee" autocomplete="off">
+            <img src="img/icons/tick-gold.png" class="passwordCorrect">
+        </div>
+        <div class="horizontal-divider"></div><!-- /divider -->
+        <p class="passwordDetails">Your password must contain at least 8 characters,<br>
+            1 uppercase letter and 1 number<br>
+            The following special characters are permitted:<br>
+            ,./<>?;':"[]{}\|!@#$%^&amp;*(-=_+<br>
+            Your password cannot contain any spaces.
+        </p>
+		
+        <div class="saveBtn"><input type="submit" value="Next" id="nextBtn" disabled="disabled"></div>
+		</form>
+        
+	</div><!-- /content -->
+    
+    <div id="footer" data-role="footer" data-position="fixed">
+		<div class="ui-grid-d bottom-nav">
+            <div class="ui-block-a"><a href="favourites.html" data-transition="slide" class="bottom-buttons icon-favourites">Favourites</a></div>
+            <div class="ui-block-b"><a href="messages.html" data-transition="slide" class="bottom-buttons icon-messages">Messages<span class="count-num">3</span></a></div>
+            <div class="ui-block-c"><a href="myprofile-w-wall.html" data-transition="slide" class="bottom-buttons icon-me">Me</a></div>
+            <div class="ui-block-d"><a href="notifications.html" data-transition="slide" class="bottom-buttons icon-notifications">Notifications<span class="count-num">1</span></a></div>
+            <div class="ui-block-e"><a href="news.html" data-transition="slide" class="bottom-buttons icon-news">News<span class="count-circle"></span></a></div>
+        </div><!-- /grid-c -->
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
